@@ -1,0 +1,104 @@
+body {
+    font-family: "Georgia", serif;
+    background-color: #f9f9f6;
+    color: #2c2c2c;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a3d2f;
+    color: #f2f2f2;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-codex {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.titulo-codex:hover {
+    color: #f5db47; /* tom suave, levemente esverdeado e dessaturado */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    padding-top: 5.5rem; /* Garante que o conteúdo não fique escondido atrás do cabeçalho */
+    font-size: 2rem;
+    font-weight: normal;
+    color: #1a3d2f;
+    border-bottom: 2px solid #dcdccf;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 1.75rem;
+    color: #3f5e48;
+    border-left: 4px solid #accfb0;
+    padding-left: 0.6rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+em {
+    font-style: italic;
+}
+
+strong, .marcador {
+    color: #315c44;
+    font-weight: bold;
+}
+
+.marcador::after {
+    content: " —";
+    margin-right: 0.25rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+}
+
+.lista-especies {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 2rem;
+}
+
+.lista-especies li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.lista-especies a {
+    color: #315c44;
+    text-decoration: none;
+}
+
+.lista-especies a:hover {
+    text-decoration: underline;
+}
